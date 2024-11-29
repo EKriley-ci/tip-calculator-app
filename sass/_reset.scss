@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', sans-serif;
+}
+
+input{
+    width: 100%;
+    text-align: right;
+    border: none;
+    height: 100%;
+    background: transparent;
+    font-weight: bolder;
+    outline: none;
+    color: hsl(183, 100%, 15%);
+    font-size: 1.2rem;
+    
+}
+
+.input {
+    display: flex;
+    background-color:hsl(189, 41%, 97%);
+    box-shadow: 1px 2px 10em rgba(0, 0, 0, 0.064);
+    padding: 0.5em;
+    border-radius: 5px;
+    padding-inline: .6em;
+}
+
+small{
+    font-weight: 600;
+    color: hsl(184, 14%, 56%);
+}
+
+/* Pour Chrome, Edge et autres navigateurs basés sur Webkit */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Pour Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+#messageErreur  {
+  color: red;
+  font-weight: 700;
+  display: none;
+  position: absolute;
+  right: 10px;
+  z-index: 1;
+  top: 0;
+}

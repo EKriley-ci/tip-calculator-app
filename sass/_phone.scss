@@ -1,0 +1,116 @@
+body {
+    background-color: hsl(185, 41%, 84%);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 2em;
+    gap: 2em;
+    img {
+        max-width: 87px;
+        align-self: center;
+    }
+    main{
+        height: 100%;
+        background-color: hsl(0, 0%, 100%);
+        padding: 1.4em;
+       display: grid;
+       gap: 2.5em;
+        .bill {
+                display: grid;
+                gap: 1.4em;
+                form{
+                  display: flex;
+                  flex-direction: column;
+                  gap: .5em;
+                }
+                .select {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5em;
+                    .btns {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: .6em;
+                        button {
+                            padding: .8em;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            color: white;
+                            border: none;
+                            border-radius: 5px;
+                            background-color: hsl(183, 100%, 15%);
+                            transition: background-color .3s ease ;
+                            outline: none;
+                            &:hover {
+                                background-color: hsl(172, 67%, 45%);
+                                color: hsl(183, 100%, 15%);
+                            }
+                            &:active {
+                                transform: scale(.98);
+                            }
+                        }
+                        #custom {
+                            background-color: hsl(189, 41%, 97%);
+                            padding-inline: .5em;
+                            border-radius: 5px;
+                            font-size: 1.6em;
+                        }
+                    }
+                }
+                .people {
+                    position: relative;
+                }
+            }
+            .result {
+                background-color: hsl(183, 100%, 15%);
+                padding: 1em;
+                border-radius: .5em;
+                display: grid;
+                gap: 1em;
+                 .amount{
+                    display: grid;
+                    gap: 1em;
+                    .person, .total {
+                        small{
+                            color: hsl(0, 0%, 100%);
+                        }
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        h2{
+                            color: hsl(172, 67%, 45%);
+                            font-size: 1.7rem;
+                        }
+                        .title {
+                            p{
+                                font-size: .7rem;
+                                font-weight: 600;
+                                color: hsl(172, 67%, 45%);
+                            }
+                        }
+                    }
+                 }
+                 button{
+                    padding: .5em;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                    color: hsl(183, 100%, 15%);
+                    background-color: hsl(172, 67%, 45%);
+
+                    &:hover {
+                        background-color: hsl(172, 77%, 28%);
+                        color: white;
+                    }
+                    &:active {
+                        transform: scale(.98);
+                    }
+                 }
+             }
+    }
+}

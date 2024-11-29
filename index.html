@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator app</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+<body>
+    <img src="images/logo.svg" alt="splitter logo" class="logo">
+    <main>
+            <section class="bill">
+            <form>
+                <small>Bill</small>
+                <div class="price input">
+                    <img src="images/icon-dollar.svg" alt="icon-dollar">
+                    <input type="text" placeholder="0" id="price" value="0">
+                </div>
+            </form>
+            <div class="select">
+                <small>Select Tip %</small>
+                <div class="btns">
+                <button id="tip5">5%</button>
+                <button id="tip10">10%</button>
+                <button id="tip15">15%</button>
+                <button id="tip25">25%</button>
+                <button id="tip50">50%</button>
+                <input type="text" placeholder="Custom" id="custom">
+                </div>
+            </div>
+            <div class="people">
+                <small> Number of People</small> <span id="messageErreur">can't be zero</span>
+                <div class="input people">
+                    <img src="images/icon-person.svg" alt="icon of a person">
+                    <input type="text" id="numPerson" value="0" />
+                </div>
+            </div>
+        </section>
+        <section class="result">
+            <div class="amount">
+                <div class="person">
+                    <div class="title">
+                        <small>Tip Amount</small>
+                    <p>/ person</p>
+                    </div>
+                    <h2 id="personPrice"></h2>
+                </div>
+                <div class="total">
+                    <div class="title">
+                        <small>Total</small>
+                    <p>/ person</p>
+                    </div>
+                    <h2 id="totalPrice"></h2>
+                </div>
+            </div>
+            <button id="resetBtn">
+                Reset
+            </button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
